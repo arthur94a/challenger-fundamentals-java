@@ -82,7 +82,6 @@ public class Book {
     public String printBook() {
         return "Book{" +
                "id='" + id + '\'' +
-               ", title='" + title + '\'' +
                ", author=" + author.getName() +
                ", publish=" + publish +
                ", available=" + available +
