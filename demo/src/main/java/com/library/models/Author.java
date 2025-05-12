@@ -20,6 +20,10 @@ public class Author {
         this.bornDate = borDate;
     }
 
+    public String getId() {
+        return id;
+    }
+
     public String getName() {
         return name;
     }

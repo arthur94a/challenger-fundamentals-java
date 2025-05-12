@@ -15,4 +15,13 @@ public class AuthorService {
     public List<Author> getAll() {
         return authors;
     }
+
+    public Author getById(String id) {
+        for (Author author : authors) {
+            if (author.getId().equals(id)) {
+                return author;
+            }
+        }
+        return null;
+    }
 }

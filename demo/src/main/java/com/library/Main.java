@@ -5,7 +5,7 @@ import java.util.List;
 
 import com.library.config.DataSeeder;
 import com.library.models.Author;
-import com.library.models.Book;
+// import com.library.models.Book;
 import com.library.models.Lend;
 // import com.library.models.User;
 import com.library.service.AuthorService;
@@ -20,10 +20,10 @@ public class Main {
 
         DataSeeder.seed(books, authors);
 
-        for (Book book: books.getAll()) {
-            System.out.println(book.getTitle());
-        }
+        // for (Book book: books.getAll()) {
+        //     System.out.println(book.getTitle());
+        // }
 
-        books.newBook();
+        books.newBook(authors);
     }
 }
